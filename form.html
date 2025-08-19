@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Registration Form</title>
+  <style>
+    /* Basic styling for the whole page */
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    /* Container for the form */
+    .form-box {
+      background-color: white;
+      padding: 20px;
+      margin: auto;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    /* Form heading */
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    /* Labels and input boxes */
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    /* Submit button */
+    .submit-btn {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: chocolate;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Register</h2>
+    <form>
+      <!-- Name input -->
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="fullname" required>
+      </div>
+
+      <!-- Roll No input -->
+      <div class="form-group">
+        <label for="roll">Roll No</label>
+        <input type="text" id="roll" name="rollno" required>
+      </div>
+
+      <!-- Email input -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <!-- Password input -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
